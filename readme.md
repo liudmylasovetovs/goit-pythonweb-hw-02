@@ -27,6 +27,7 @@
     - виправляємо помилку із встановленням psycopg2 на Linux, додамо умови platform_system в requirements.txt:
 
         psycopg2==2.9.9 ; python_version >= "3.10" and python_version < "4.0" and platform_system == "Windows"
+
         psycopg2-binary==2.9.9 ; python_version >= "3.10" and python_version < "4.0" and platform_system == "Linux"
 
     - Запускаємо контейнер docker compose up --build -d
